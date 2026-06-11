@@ -98,6 +98,34 @@
       color: #8b949e;
       font-size: 14px;
     }
+      .tag {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid;
+}
+
+.tag.idea {
+  color: #d2a8ff;
+  background-color: rgba(210, 168, 255, 0.12);
+  border-color: rgba(210, 168, 255, 0.35);
+}
+
+.tag.progress {
+  color: #58a6ff;
+  background-color: rgba(88, 166, 255, 0.12);
+  border-color: rgba(88, 166, 255, 0.35);
+}
+
+.tag.completed {
+  color: #3fb950;
+  background-color: rgba(63, 185, 80, 0.12);
+  border-color: rgba(63, 185, 80, 0.35);
+}
+    
   </style>
 
 </head>
@@ -125,30 +153,33 @@
   <h2>Projects</h2>
 
   <div class="card">
-    <span class="tag">In Progress</span>
-    <h3><a href="projects/motorized-bicycle.html">Motorized Bicycle Build</a></h3>
-    <p>
+      <span class="tag progress">In Progress</span>
+      <h3>Motorized Bicycle Build</h3>
+      <p>
       Custom 100cc motorized bicycle project involving engine installation, drivetrain setup,
       fuel system tuning, performance testing, cost analysis, and mechanical troubleshooting.
-    </p>
+      </p>
+      <a href="projects/motorized-bicycle.html">View Project →</a>
   </div>
 
   <div class="card">
-    <span class="tag">In Progress</span>
-    <h3>SDR Receiver / Scanner Project</h3>
-    <p>
+      <span class="tag idea">Idea / Concept</span>
+      <h3>SDR Receiver / Scanner Project</h3>
+      <p>
       Software-defined radio project focused on RF reception, signal processing,
-      SDR hardware, frequency monitoring, and future embedded system integration.
-    </p>
+      tuning, and scanner system development.
+      </p>
+      <a href="projects/sdr-scanner.html">View Project →</a>
   </div>
 
   <div class="card">
-    <span class="tag">Concept / In Progress</span>
-    <h3>Automatic Basketball Can Crusher</h3>
-    <p>
-      Concept for an arcade-style pneumatic can crusher using sensors, compressed air,
-      mechanical safety features, and a custom electronics control system.
-    </p>
+      <span class="tag idea">Idea / Concept</span>
+      <h3>Automatic Basketball Can Crusher</h3>
+      <p>
+      Arcade-style pneumatic can crusher concept using a gravity-fed chute,
+      microswitch triggering, and automated crushing/ejection.
+      </p>
+      <a href="projects/basketball-can-crusher.html">View Project →</a>
   </div>
 
 </section>
