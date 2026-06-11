@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automated Etch-A-Sketch | Josh Zolla</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #30363d;
+      background-color: #010409;
+    }
+
+    header h1 {
+      color: #f0f6fc;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #8b949e;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #58a6ff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #f0f6fc;
+    }
+
+    .card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      margin-bottom: 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid;
+    }
+
+    .tag.idea {
+      color: #d2a8ff;
+      background-color: rgba(210, 168, 255, 0.12);
+      border-color: rgba(210, 168, 255, 0.35);
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #8b949e;
+      border-top: 1px solid #30363d;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <span class="tag idea">Idea / Concept</span>
+    <h1>Automated Etch-A-Sketch</h1>
+    <p>
+      A planned Arduino-controlled drawing machine that automates an Etch-A-Sketch using
+      motors, programmed movement, and basic coordinate-based drawing logic.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <div class="card">
+        <p>
+          The Automated Etch-A-Sketch project is a concept for converting a manual
+          Etch-A-Sketch into a programmable drawing machine. The goal is to control the two
+          Etch-A-Sketch knobs using motors so that drawings can be created automatically
+          from programmed motion commands.
+        </p>
+
+        <p>
+          This project combines mechanical motion, embedded controls, motor control, calibration,
+          and basic coordinate-based drawing logic.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Design Concept</h2>
+
+      <div class="card">
+        <h3>Two-Axis Motion</h3>
+        <p>
+          An Etch-A-Sketch works by controlling horizontal and vertical motion separately.
+          This project would use two motors: one motor for the horizontal knob and one motor
+          for the vertical knob. By coordinating the motion of both motors, the system could
+          draw lines, shapes, and simple images.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Arduino Control</h3>
+        <p>
+          An Arduino or similar microcontroller would send commands to the motors. The controller
+          would determine how many steps each motor should move and in which direction.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Motor Mounting</h3>
+        <p>
+          The motors would need to be mechanically attached to the Etch-A-Sketch knobs using
+          brackets, couplers, or 3D-printed adapters. A major part of the project would be
+          creating a reliable mount that keeps the motors aligned with the knobs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Drawing Logic</h3>
+        <p>
+          The system would use basic coordinate-style commands to move the Etch-A-Sketch cursor.
+          Early versions would likely draw simple lines, boxes, and patterns before attempting
+          more complex images.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Planned System Components</h2>
+      <div class="card">
+        <ul>
+          <li>Etch-A-Sketch drawing board</li>
+          <li>Arduino or similar microcontroller</li>
+          <li>Two stepper motors or servo motors</li>
+          <li>Motor driver modules</li>
+          <li>Knob couplers or 3D-printed adapters</li>
+          <li>Motor mounting frame</li>
+          <li>Power supply</li>
+          <li>Programmed drawing routines</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Engineering Challenges</h2>
+      <div class="card">
+        <ul>
+          <li>Accurately controlling two-axis movement</li>
+          <li>Mounting motors without slipping or binding</li>
+          <li>Calibrating motor steps to Etch-A-Sketch cursor movement</li>
+          <li>Preventing backlash and mechanical error</li>
+          <li>Converting simple shapes into motor commands</li>
+          <li>Creating repeatable drawings despite mechanical limitations</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Engineering Goals</h2>
+      <div class="card">
+        <ul>
+          <li>Practice Arduino programming and motor control</li>
+          <li>Learn how mechanical movement translates into coordinate motion</li>
+          <li>Design and test custom motor mounts</li>
+          <li>Develop basic motion-planning logic</li>
+          <li>Create a clean portfolio project combining hardware and software</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Current Status</h2>
+      <div class="card">
+        <p>
+          This project is currently in the idea and concept phase. The basic control concept,
+          likely components, and design challenges have been identified, but the physical build
+          and final control system have not been completed yet.
+        </p>
+      </div>
+    </section>
+
+    <p><a href="../index.html">← Back to Home</a></p>
+  </main>
+
+  <footer>
+    <p>© 2026 Joshua Zolla</p>
+  </footer>
+</body>
+</html>
