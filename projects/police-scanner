@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Police Scanner Project | Josh Zolla</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #30363d;
+      background-color: #010409;
+    }
+
+    header h1 {
+      color: #f0f6fc;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #8b949e;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #58a6ff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #f0f6fc;
+    }
+
+    .card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      margin-bottom: 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid;
+    }
+
+    .tag.idea {
+      color: #d2a8ff;
+      background-color: rgba(210, 168, 255, 0.12);
+      border-color: rgba(210, 168, 255, 0.35);
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #8b949e;
+      border-top: 1px solid #30363d;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <span class="tag idea">Idea / Concept</span>
+    <h1>Standalone Police Scanner Project</h1>
+    <p>
+      A planned software-defined radio scanner project focused on RF reception,
+      public safety radio monitoring concepts, trunked radio systems, embedded hardware,
+      and professional enclosure design.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <div class="card">
+        <p>
+          This project is a concept for a standalone public safety radio scanner built around
+          software-defined radio technology. The goal is to design a dedicated device that can
+          receive radio signals, process digital radio systems, and display useful system
+          information through a custom user interface.
+        </p>
+
+        <p>
+          Unlike a basic computer-based SDR demo, this project is intended to eventually become
+          a self-contained scanner with its own enclosure, buttons, display, speaker, and
+          embedded processing hardware.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Planned Features</h2>
+      <div class="card">
+        <ul>
+          <li>Software-defined radio receiver for RF signal reception</li>
+          <li>Raspberry Pi or similar embedded computer for processing</li>
+          <li>Support for monitoring unencrypted public safety radio traffic where legal</li>
+          <li>Control channel decoding for trunked radio systems</li>
+          <li>Automatic following of selected talkgroups</li>
+          <li>Built-in speaker for audio output</li>
+          <li>Local display for frequency, signal, and system information</li>
+          <li>Physical user interface with buttons, LEDs, and a rotary volume control</li>
+          <li>Professional enclosure design with future PCB possibility</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Design Concept</h2>
+
+      <div class="card">
+        <h3>User Interface</h3>
+        <p>
+          The scanner is planned to use a simple front-panel interface with dedicated buttons
+          for scan modes and public safety categories. The concept includes separate buttons
+          or indicators for police, fire, and EMS monitoring modes, along with a rotary control
+          for volume adjustment.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Signal Processing</h3>
+        <p>
+          The system would use an SDR receiver to capture RF signals and software running on
+          an embedded computer to tune, decode, and process the received signals. A major goal
+          of the project is understanding how trunked radio systems assign active conversations
+          to different frequencies.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Enclosure</h3>
+        <p>
+          The final version would be housed in a custom enclosure designed to look and function
+          like a finished electronic device rather than a loose collection of parts. The enclosure
+          would hold the display, speaker, buttons, LEDs, wiring, SDR hardware, and processing board.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Engineering Goals</h2>
+      <div class="card">
+        <ul>
+          <li>Develop a stronger understanding of RF communication systems</li>
+          <li>Learn how SDR receivers process real-world radio signals</li>
+          <li>Study P25 and trunked radio system concepts</li>
+          <li>Practice embedded system integration</li>
+          <li>Design a clean physical interface and enclosure</li>
+          <li>Document the project as a portfolio-quality engineering build</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Current Status</h2>
+      <div class="card">
+        <p>
+          This project is currently in the idea and concept phase. The major system goals,
+          hardware direction, and user interface concept have been identified, but the final
+          hardware and software implementation have not been completed yet.
+        </p>
+      </div>
+    </section>
+
+    <p><a href="../index.html">← Back to Home</a></p>
+  </main>
+
+  <footer>
+    <p>© 2026 Joshua Zolla</p>
+  </footer>
+</body>
+</html>
