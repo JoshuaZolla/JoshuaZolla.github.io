@@ -1,4 +1,4 @@
-# Josh Zolla Engineering Portfolio
+# Zolla Engineering Portfolio
 
 This repository hosts my engineering portfolio website using GitHub Pages.
 
